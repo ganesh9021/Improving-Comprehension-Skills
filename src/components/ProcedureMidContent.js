@@ -1,12 +1,10 @@
 import React from "react";
-import level1Tense from "../Img/ProcedureImages/level-1-1-tense.png";
-import level1actsent from "../Img/ProcedureImages/level-1-2-actsent.png";
-import level1passsent from "../Img/ProcedureImages/level-1-3-passsent.png";
-import level1feedback from "../Img/ProcedureImages/level-1-4-feedback.png";
-import level2passsent from "../Img/ProcedureImages/level-2-2-passsent.png";
-import level2actsent from "../Img/ProcedureImages/level-2-3-actsent.png";
-import level2feedback from "../Img/ProcedureImages/level-1-4-feedback.png";
-import selectLevel from "../Img/ProcedureImages/selectLevel.png";
+import img1 from "../Img/ProcedureImages/apj.png";
+import img2 from "../Img/ProcedureImages/apj1.png";
+import img3 from "../Img/ProcedureImages/apj3.png";
+import img4 from "../Img/ProcedureImages/E2_que1.png";
+import img5 from "../Img/ProcedureImages/E2_que2.png";
+import img6 from "../Img/ProcedureImages/crossword.png";
 
 const ProcedureMidContent = () => {
   return (
@@ -15,159 +13,101 @@ const ProcedureMidContent = () => {
       style={{ overflow: "auto", width: "100%" }}
     >
       <div className="fw-bolder">Procedure:</div>
-      <ul>
-        There are two levels in the activity. Select the level to start with the
-        activity.
-      </ul>
-      <ol type="A">
-        <li>
-          <b>Level-1</b> : Active voice to Passive voice
-        </li>
-        <ol>          
-          <li>Select the desired tense.</li>
-          
-          <div className="text-left m-2">
-            <div>
-              <img
-                className="img-fluid"
-                style={{ border: "1px solid black", width:"15%"}}
-                src={level1Tense}
-                alt="Image not available"
-              />
-            </div>
-            <div> <b className="text-center" >Fig. 1: Select Tense</b></div>
-          </div>          
-          
-          <li>The sentence displayed is in the active voice.</li>
-          <div className="text-left m-2">
-            <div>
-              <img
-                className="img-fluid"
-                style={{ border: "1px solid black", width:"55%", }}
-                src={level1actsent}
-                alt="Image not available"
-              />
-            </div>
-            <div> <b>Fig. 2: Sentence in Active voice</b></div>
-          </div>          
-          
-          <li>Now, rearrange the given words below to construct the corresponding Passive voice of the given sentence.​</li> 
-          <div className="text-left m-2">
-            <div>
-              <img
-                className="img-fluid"
-                style={{ border: "1px solid black", width:"55%", }}
-                src={level1passsent}
-                alt="Image not available"
-              />
-            </div>
-            <div> <b>Fig. 3: Shuffeled words of sentence in passive voice</b></div>
-          </div>          
-          
-          <li>Click on "Hints" to view hints.​</li>
-          <li>Click on "Check" to check whether the Passive voice is properly constructed and check the feedback displayed below.​</li>
-          
-          <div className="text-left m-2">
-            <div>
-              <img
-                className="img-fluid"
-                style={{ border: "1px solid black", width:"55%", }}
-                src={level1feedback}
-                alt="Image not available"
-              />
-            </div>
-            <div> <b>Fig. 4: Feedback of constructed passive voice sentence</b></div>
-          </div>          
-             
-          <li>Click on "Next" to view the next sentence.​</li>
-          <li>If you are unable to solve the question, click on “Show answer” to  see the answer, but “Show answer” it is visible only if you answer it thrice incorrectly.​</li>
-          <li>Click on "Select Level" buttion to switch between the levels as shown in Fig. 5.​</li>          
-          <div className="text-left m-2">
-            <div>
-              <img
-                className="img-fluid"
-                style={{ border: "1px solid black" }}
-                src={selectLevel}
-                alt="Image not available"
-              />
-            </div>
-            <div> <b>Fig. 5: Select Level</b></div>
+      <ol>
+        <li>Read the given comprehension carefully.</li>
+        <div className="text-center m-2">
+          <div>
+            <img
+              className="img-fluid"
+              style={{ border: "1px solid black" }}
+              src={img1}
+              alt="logo"
+            />
           </div>
-     </ol>
-     <br/>
+          <div className="fw-bolder">Fig. 1: APJ Abdul Kalam</div>
+        </div>
         <li>
-          <b>Level-2 </b> : Passive voice to Active voice
+          Arrange the given jumbled sentences in order as per the passage.
         </li>
-        <ol>          
-          <li>Select the desired tense.</li>
-          
-          <div className="text-left m-2">
-            <div>
-              <img
-                className="img-fluid"
-                style={{ border: "1px solid black", width:"15%"}}
-                src={level1Tense}
-                alt="Image not available"
-              />
-            </div>
-            <div> <b className="text-center" >Fig. 6: Select Tense</b></div>
-          </div>          
-          
-          <li>The sentence displayed is in passive voice.</li>
-          <div className="text-left m-2">
-            <div>
-              <img
-                className="img-fluid"
-                style={{ border: "1px solid black", width:"55%"}}
-                src={level2passsent}
-                alt="Image not available"
-              />
-            </div>
-            <div> <b className="text-center" >Fig. 7: Sentence in Passive voice</b></div>
-          </div>           
-          
-          <li>Now, rearrange the given words below to construct the corresponding Active voice of the given sentence.​</li>
-          <div className="text-left m-2">
-            <div>
-              <img
-                className="img-fluid"
-                style={{ border: "1px solid black", width:"55%"}}
-                src={level2actsent}
-                alt="Image not available"
-              />
-            </div>
-            <div> <b className="text-center" >Fig. 8: Shuffeled words of sentence in active voice</b></div>
-          </div>          
-                     
-          <li>Click on "Hints" to view hints.​</li>
-          <li>Click on "Submit" to check whether the Active voice is properly constructed and check the feedback displayed below.​</li>
-          <div className="text-left m-2">
-            <div>
-              <img
-                className="img-fluid"
-                style={{ border: "1px solid black", width:"55%"}}
-                src={level2feedback}
-                alt="Image not available"
-              />
-            </div>
-            <div> <b className="text-center" >Fig. 9: Feedback of constructed active voice sentence</b></div>
+        <div className="text-center m-2">
+          <div>
+            <img
+              className="img-fluid"
+              style={{ border: "1px solid black" }}
+              src={img2}
+              alt="logo"
+            />
           </div>
-          
-          <li>Click on "Next" to view the next sentence.​</li>
-          <li>If you are unable to solve the question, click on “Show answer” to  see the answer, but “Show answer” it is visible only if you answer it thrice incorrectly.​</li>
-          <li>Click on "Select Level" buttion to switch between the levels as shown in Fig. 10.</li>
-          <div className="text-left m-2">
-            <div>
-              <img
-                className="img-fluid"
-                style={{ border: "1px solid black" }}
-                src={selectLevel}
-                alt="Image not available"
-              />
-            </div>
-            <div> <b>Fig. 10: Select Level</b></div>          
-          </div>         
-        </ol>
+          <div className="fw-bolder">Fig. 2: Drag and drop</div>
+        </div>
+        <li>
+          To check the your answer, click on ‘Submit’ button. The green sentence
+          are the correct position and the red are the wrong position.
+        </li>
+        <div className="text-center m-2">
+          <div>
+            <img
+              className="img-fluid"
+              style={{ border: "1px solid black" }}
+              src={img3}
+              alt="logo"
+            />
+          </div>
+          <div className="fw-bolder">Fig. 3: Correct feedback</div>
+        </div>
+        <li>
+          For each sentence, check if the sentence is True. Click on submit to
+          check your answer, which is displayed at the right of the question.
+        </li>
+        <div className="text-center m-2">
+          <div>
+            <img
+              className="img-fluid"
+              style={{ border: "1px solid black" }}
+              src={img4}
+              alt="logo"
+            />
+          </div>
+          <div className="fw-bolder">Fig. 4: Correct and incorrect feedback</div>
+        </div>
+        <li>
+          Complete the sentences choosing an appropriate option. To check your
+          answer click on ‘Submit’.
+        </li>
+        <div className="text-center m-2">
+          <div>
+            <img
+              className="img-fluid"
+              style={{ border: "1px solid black" }}
+              src={img5}
+              alt="logo"
+            />
+          </div>
+          <div className="fw-bolder">Fig. 5: Incorrect feedback</div>
+        </div>
+        <li>Complete the crossword with the help of given clues.</li>
+        <ul type="disc">
+          <li>
+            To reveal the answer of particular row/column click on it and click
+            on respective row/column Reveal’ button e.g. ‘Reveal 3D’.
+          </li>
+          <li>
+            To check your particular answer click on the respective row/column
+            ‘Check’ button e.g. ‘Check 3D’.
+          </li>
+          <li>To check all your answer click on ‘Check All’ button.</li>
+        </ul>
+        <div className="text-center m-2">
+          <div>
+            <img
+              className="img-fluid"
+              style={{ border: "1px solid black" }}
+              src={img6}
+              alt="logo"
+            />
+          </div>
+          <div className="fw-bolder">Fig. 6: Crossword</div>
+        </div>
       </ol>
     </div>
   );

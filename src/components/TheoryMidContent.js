@@ -7,188 +7,78 @@ const TheoryMidContent = () => {
       style={{ overflow: "auto", width: "100%", margin: "10px 10px 10px 10px" }}
     >
       <div className="fw-bolder">Objective</div>
-      <ul>To learn the subject verb agreement.</ul>
-      <div className="fw-bolder">Basic Rule:</div>
+      <ul>
+        To understand and apply the grammatical rule that the subject and verb
+        in a sentence.
+      </ul>
+      <div className="fw-bolder">Reading Comprehension [Definition]:</div>
       <div>
-        <p>
-          A singular subject (she, Bill, car) takes a singular verb (is, goes,
-          shines), whereas a plural subject (they,we) takes a plural verb(are,
-          go, shine).
-        </p>
+        <ul>
+          Reading comprehension is the ability to read text, process it and
+          understand its meaning. An individual's ability to comprehend text is
+          influenced by their traits and skills, one of which is the ability to
+          make inferences. If word recognition is difficult, students use too
+          much of their processing capacity to read individual words, which
+          interferes with their ability to comprehend what is read.
+        </ul>
       </div>
-      <div className="fw-bolder">Example:</div>
-      <ul>
+      <div className="fw-bolder">Comprehension strategies :</div>
+      <ol>
         <li>
-          <u>singular subject:</u> My brother is a nutritionist.
+          Monitor comprehension - This tells the student what he has understood
+          and what he has not.
         </li>
-        <li>
-          <u>plural subject:</u> My sisters are mathematicians.
-        </li>
-      </ul>
-      <div className="fw-bolder">Rule 1</div>
-      <div>
-        <p>
-          A subject will come before a phrase beginning with <b>of</b>. This is
-          a key rule for understanding subjects. The word <b>of</b> is the
-          culprit in many, perhaps most, subject-verb mistakes.
-        </p>
-      </div>
-      <div className="fw-bolder">Example</div>
-      <ul>
-        <li>
-          <u>Incorrect:</u> A bouquet of yellow roses lend color and fragrance
-          to the room.
-        </li>
-        <li>
-          <u>Correct:</u> A bouquet of yellow roses lends . . . (bouquet lends,
-          not roses lend)
-        </li>
-      </ul>
-      <div className="fw-bolder">Rule 2</div>
-      <div>
-        <p>
-          Two singular subjects connected by{" "}
-          <b>or, either/or, or neither/nor</b>
-          require a singular verb.
-        </p>
-      </div>
-      <div className="fw-bolder">Example:</div>
-      <ul>
-        <li>
-          My aunt <i>or</i> my uncle is arriving by train today.
-        </li>
-        <li>
-          <i>Neither</i> Juan <i>nor</i> Carmen is available.{" "}
-        </li>
-        <li>
-          <i>Either</i> Kiana <i>or</i> Casey is helping today with stage
-          decorations.
-        </li>
-      </ul>
-      <div className="fw-bolder">Rule 3</div>
-      <div>
-        <p>
-          The verb in an or, either/or, or neither/nor sentence agrees with the
-          noun or pronoun closest to it.
-        </p>
-      </div>
-      <div className="fw-bolder">Example</div>
-      <ul>
-        <li>
-          <i>Neither</i> the plates <i>nor</i> the serving bowl goes on that
-          shelf.
-        </li>
-        <li>
-          <i>Neither</i> the serving bowl <i>nor</i> the plates go on that
-          shelf.
-        </li>
-      </ul>
-      <div className="fw-bolder">Rule 4</div>
-      <div>
-        <p>
-          As a general rule, use a plural verb with two or more subjects when
-          they are connected by <b>and</b>.
-        </p>
-      </div>
-      <div className="fw-bolder">Example</div>
-      <ul>
-        <li>A car and a bike are my means of transportation.</li>
-      </ul>
-      <div className="fw-bolder">Exceptions</div>
-      <ul>
-        <li>Breaking and entering is against the law.</li>
-        <li>The bed and breakfast was charming.</li>
-        <li>
-          In those sentences, breaking and entering and bed and breakfast are
-          compound nouns.
-        </li>
-      </ul>
-      <div className="fw-bolder">Rule 5</div>
-      <div>
-        <p>
-          Sometimes the subject is separated from the verb by such words as{" "}
-          <b>along with, as well as, with, besides, not.</b>These words and
-          phrases are not part of the subject. Ignore them and use a singular
-          verb when the subject is singular.
-        </p>
-      </div>
-      <div className="fw-bolder">Example</div>
-      <ul>
-        <li>
-          The politician, <i>along with</i> the newsmen, is expected shortly.
-        </li>
-        <li>
-          Excitement, <i>as well as</i> nervousness, is the cause of her
-          shaking.
-        </li>
-      </ul>
-      <div className="fw-bolder">Rule 6</div>
-      <div>
-        <p>
-          With words that indicate portions :{" "}
-          <b>a lot, a majority, some, all, etc.</b>
-          Rule 1 given earlier is reversed, and we are guided by the noun after
-          of. If the noun after of is singular, use a singular verb. If it is
-          plural, use a plural verb.
-        </p>
-      </div>
-      <div className="fw-bolder">Example</div>
-      <ul>
-        <li>A lot of the pie has disappeared.</li>
-        <li>A lot of the pies have disappeared.</li>
-        <li>A third of the city is unemployed.</li>
-        <li>A third of the people are unemployed.</li>
-      </ul>
-      <div className="fw-bolder">Rule 7</div>
-      <div>
-        <p>
-          In sentences beginning with <b>here</b> or <b>there</b>, the true
-          subject follows the verb.
-        </p>
-      </div>
-      <div className="fw-bolder">Example</div>
-      <ul>
-        <li>
-          <i>There</i> are four hurdles to jump.
-        </li>
-        <li>
-          <i>There</i> is a high hurdle to jump.
-        </li>
-      </ul>
-      <div className="fw-bolder">Rule 8</div>
-      <div>
-        <p>
-          Use a singular verb with distances, periods of time, sums of money,
-          etc., when considered as a unit.
-        </p>
-      </div>
-      <div className="fw-bolder">Example</div>
-      <ul>
-        <li>Three miles is too far to walk.</li>
-        <li>Five years is the maximum sentence for that offense.</li>
-        <li>Ten dollars is a high price to pay.</li>
-      </ul>
-      <div className="fw-bolder">Exceptions</div>
-      <ul>
-        <li>Ten dollars (i.e., dollar bills) were scattered on the floor.</li>
-      </ul>
-      <div className="fw-bolder">Rule 9</div>
-      <div>
-        <p>
-          Some collective nouns, such as{" "}
-          <b>family, couple, staff, audience, etc.</b>
-          may take either a singular or a plural verb, depending on their use in
-          the sentence.
-        </p>
-      </div>
-      <div className="fw-bolder">Example</div>
-      <ul>
-        <li>The staff is in a meeting. (Staff is acting as a unit.)</li>
-        <li>
-          The couple disagree about disciplining their child. (The couple refers
-          to two people who are acting as individuals.)
-        </li>
-      </ul>
+        <div>Monitoring comprehension helps students in following ways:</div>
+        <ul type="disc">
+          <li>Being aware of what student understands.</li>
+          <li>Indicate what he has not understood.</li>
+        </ul>
+        <li>"Thinking about thinking" -</li>
+        <div>This in other words is also called as meta cognition.</div>
+        <div>This strategy helps in following ways :</div>
+        <ul type="disc">
+          <li>Indicate where difficulty occurs.</li>
+          <li>Indicate what difficulty is.</li>
+          <li>
+            Rephrase the difficult sentence or passage in their own words.
+          </li>
+          <li>Reread the passage to understand more.</li>
+          <li>
+            Peek into passage for data that might resolve your difficulty.
+          </li>
+        </ul>
+        <li>Semantic and graphical organizers -</li>
+        <div>
+          A graphic organizer, also known as knowledge map, concept map, story
+          map, cognitive organizer, advance organizer, or concept diagram, is a
+          communication tool that uses visual symbols to express knowledge,
+          concepts, thoughts, or ideas, and the relationships between them.
+        </div>
+        <div>Some good examples for graphic organizers are :</div>
+        <ul type="disc">
+          <li>Venn diagrams</li>
+          <li> Storyboard/Chain of Events</li>
+          <li>Story Map</li>
+          <li>Cause/Effect</li>
+        </ul>
+        <li>Question answering -</li>
+        <div>This can help because it can :</div>
+        <ul type="disc">
+          <li>Help student understand the motive of reading the passage.</li>
+          <li>Give emphasis on what they are going to learn.</li>
+          <li>Assist students to think in active fashion as they read.</li>
+          <li>Endorse students to monitor their comprehension.</li>
+          <li>
+            Assist students for reviewing the content and for their inferences .
+          </li>
+        </ul>
+        <li>Question generation -</li>
+        <div>
+          Students learn if they are able to grasp the concept and what they are
+          reading. They learn to ask themselves questions that require thinking
+          about more than one part of information and combine this information.
+        </div>
+      </ol>
     </div>
   );
 };

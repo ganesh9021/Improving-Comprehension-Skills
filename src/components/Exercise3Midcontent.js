@@ -31,8 +31,8 @@ const Exercise3Midcontent = () => {
 
   useEffect(() => {
     // Shuffle the arrays before setting them into state
-    const shuffledExercise2 = shuffleArray([...data[1].exercise2]);
-    const shuffledExercise1 = shuffleArray([...data[1].exercise1]);
+    const shuffledExercise2 = shuffleArray([...data[2].exercise2]);
+    const shuffledExercise1 = shuffleArray([...data[2].exercise1]);
     setShuffledData({
       exercise1: shuffledExercise1,
       exercise2: shuffledExercise2,
@@ -46,8 +46,8 @@ const Exercise3Midcontent = () => {
     setShowFB(true);
     // console.log(selectedAns1);
     // console.log(selectedAns2);
-    const answer1Check = data[1].answer1.includes(selectedAns1);
-    const answer2Check = data[1].answer2.includes(selectedAns2);
+    const answer1Check = data[2].answer1.includes(selectedAns1);
+    const answer2Check = data[2].answer2.includes(selectedAns2);
 
     if (!selectedAns1 || !selectedAns2) {
       setFeedback("Please select atleast one option for each question.");
@@ -95,7 +95,7 @@ const Exercise3Midcontent = () => {
     <div className="row">
       <div className="">
         <div className="fw-bolder">
-          One elderly gentleman was especially heart-broken because
+          The animals reacted to the frog's song with
         </div>
         <Table bordered>
           <tbody>
@@ -122,7 +122,7 @@ const Exercise3Midcontent = () => {
   const renderQuestion2 = () => (
     <div className="row">
       <div className="">
-        <div className="fw-bolder">Lionel could not be saved as</div>
+        <div className="fw-bolder">The frog croaked</div>
         <Table bordered>
           <tbody>
             {shuffledData.exercise2.map((item, index) => (
@@ -180,7 +180,9 @@ const Exercise3Midcontent = () => {
           </div>
 
           <div className="p-3">
-            <div className="mb-2 text-center">{parse(data[2].comprehension_data)}</div>
+            <div className="mb-2 text-center">
+              {parse(data[2].comprehension_data)}
+            </div>
 
             <div className="mb-2 text-center bg-warning fw-bolder p-2">
               {instruction}

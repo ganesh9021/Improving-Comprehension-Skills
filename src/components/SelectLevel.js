@@ -5,28 +5,32 @@ import { SendLogData } from "../config/wslog.js";
 import { OlabsPage } from "english-olabsnxtg-library";
 import { SelectLevelMidContent } from "./SelectLevelMidContent";
 import QuizPopupContent from "./QuizPopupContent";
+import { useTranslation } from "react-i18next";
 
 const SelectLevel = () => {
   const { sendJsonMessage } = useWebSocket(logconfig.logurl, { share: true });
+  const { t } = useTranslation();
+
   return (
     <>
       <OlabsPage
-        H_title="Improving Comprehension Skills"
-        HQ_yes="YES"
-        HQ_cancel="CANCEL"
-        HQ_quittext="Are you sure you want to quit?"
+        H_title="Improving comprehension skills"
+        HQ_yes={t("yes")}
+        HQ_cancel={t("cancel")}
+        HQ_quittext={t("aysywtq")}
         M_midheight="90%"
-        RSM_theory_tt="Theory"
-        RSM_vivavoce_tt="Viva voce"
-        RSM_procedure_tt="Procedure"
-        RSM_ok="OK"
+        RSM_theory_tt={t("theory")}
+        RSM_vivavoce_tt={t("vivavoce")}
+        RSM_procedure_tt={t("procedure")}
+        RSM_animation_tt={t("animation")}
+        RSM_ok={t("ok")}
         M_midcontent_comp={<SelectLevelMidContent />}
-        RSM_Intruc_popup_title_string="Instructions for quiz"
+        RSM_Intruc_popup_title_string={t("ifq")}
         RSM_QuizPopupContent_comp={<QuizPopupContent />}
         WS_sendJsonMessage={sendJsonMessage}
         WS_SendLogData={SendLogData}
-        labNo="9"
-        labShortName="Improving Comprehension Skills"
+        labNo="-"
+        labShortName="Improving comprehension skills"
       />
     </>
   );

@@ -12,7 +12,7 @@ const Exercise3 = () => {
   return (
     <>
      <OlabsPage
-        H_title="Improving Comprehension Skills"
+        H_title="Improving comprehension skills"
         HQ_yes="YES"
         HQ_cancel="CANCEL"
         HQ_quittext="Are you sure you want to quit?"
@@ -28,7 +28,7 @@ const Exercise3 = () => {
         WS_sendJsonMessage={sendJsonMessage}
         WS_SendLogData={SendLogData}
         labNo="6"
-        labShortName="Improving Comprehension Skills"            
+        labShortName="Improving comprehension skills"            
       />
     </>
   );

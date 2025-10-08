@@ -4,8 +4,10 @@ import Form from "react-bootstrap/Form";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import Table from "react-bootstrap/Table";
+import { useTranslation } from "react-i18next";
 
 const Exercise3Midcontent = () => {
+  const { t } = useTranslation();
   const parse = require("html-react-parser").default;
   const [bgColor, setBGColor] = useState("warning");
   const [showFB, setShowFB] = useState(false);
@@ -37,9 +39,7 @@ const Exercise3Midcontent = () => {
       exercise1: shuffledExercise1,
       exercise2: shuffledExercise2,
     });
-    setInstruction(
-      "Complete the given sentences by choosing an appropriate option."
-    );
+    setInstruction(t("instr4"));
   }, []);
 
   const handleSubmit = () => {
@@ -50,23 +50,23 @@ const Exercise3Midcontent = () => {
     const answer2Check = data[2].answer2.includes(selectedAns2);
 
     if (!selectedAns1 || !selectedAns2) {
-      setFeedback("Please select atleast one option for each question.");
+      setFeedback(t("instr5"));
       setBGColor("danger");
     } else if (answer1Check && answer2Check) {
-      setFeedback("Both the answers are correct!");
+      setFeedback(t("instr6"));
       setDisable1(true);
       setDisable2(true);
       setBGColor("success");
     } else if (answer1Check) {
-      setFeedback("Only first answer is correct!");
+      setFeedback(t("instr7"));
       setDisable1(true);
       setBGColor("warning");
     } else if (answer2Check) {
-      alert("only second answer is correct!");
+      alert(t("instr8"));
       setDisable2(true);
       setBGColor("warning");
     } else {
-      setFeedback("Both the answers are incorrect!");
+      setFeedback(t("instr9"));
       setBGColor("danger");
     }
   };
@@ -92,7 +92,7 @@ const Exercise3Midcontent = () => {
   };
 
   const renderQuestion1 = () => (
-    <div className="row">
+    <div className="row" style={{ fontSize: "calc(.6rem + .4vw)" }}>
       <div className="">
         <div className="fw-bolder">
           The animals reacted to the frog's song with
@@ -120,7 +120,7 @@ const Exercise3Midcontent = () => {
   );
 
   const renderQuestion2 = () => (
-    <div className="row">
+    <div className="row" style={{ fontSize: "calc(.6rem + .4vw)" }}>
       <div className="">
         <div className="fw-bolder">The frog croaked</div>
         <Table bordered>
@@ -146,9 +146,9 @@ const Exercise3Midcontent = () => {
   );
 
   const renderFeedback = () => (
-    <div className="row p-2">
+    <div className="row p-2" style={{ fontSize: "calc(.6rem + .4vw)" }}>
       <div className={`text-center p-2 bg-${bgColor} text-light rounded`}>
-        <div className="fw-bolder">Feedback!</div>
+        <div className="fw-bolder">{t("feedback")}!</div>
         <div>{feedback}</div>
       </div>
     </div>
@@ -164,6 +164,7 @@ const Exercise3Midcontent = () => {
             width: "100%",
             padding: 0,
             borderRadius: "5px",
+            fontSize: "calc(.6rem + .4vw)",
           }}
         >
           <div
@@ -195,11 +196,27 @@ const Exercise3Midcontent = () => {
             {showFB && renderFeedback()}
 
             <div className="d-flex justify-content-around">
-              <Button variant="contained" onClick={handleSubmit}>
-                Submit
+              <Button
+                variant="contained"
+                onClick={handleSubmit}
+                sx={{
+                  background: "#0F477E",
+                  color: "#ffffff",
+                  fontSize: "calc(.6rem + .4vw)",
+                }}
+              >
+                {t("submit")}
               </Button>
-              <Button variant="contained" onClick={handleFinish}>
-                Finish
+              <Button
+                variant="contained"
+                onClick={handleFinish}
+                sx={{
+                  background: "#0F477E",
+                  color: "#ffffff",
+                  fontSize: "calc(.6rem + .4vw)",
+                }}
+              >
+                {t("finish")}
               </Button>
             </div>
           </div>

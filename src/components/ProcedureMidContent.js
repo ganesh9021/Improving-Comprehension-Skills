@@ -5,16 +5,23 @@ import img3 from "../Img/ProcedureImages/apj3.png";
 import img4 from "../Img/ProcedureImages/E2_que1.png";
 import img5 from "../Img/ProcedureImages/E2_que2.png";
 import img6 from "../Img/ProcedureImages/crossword.png";
+import { useTranslation } from "react-i18next";
 
 const ProcedureMidContent = () => {
+  const { t } = useTranslation();
   return (
     <div
-      className="p-3 scrollbar-primary"
-      style={{ overflow: "auto", width: "100%" }}
+      className="py-3"
+      style={{
+        overflow: "auto",
+        width: "100%",
+        paddingRight: "10px",
+        fontSize: "calc(.6rem + .4vw)",
+      }}
     >
-      <div className="fw-bolder">Procedure:</div>
+      <div className="fw-bolder">{t("procedure")}:</div>
       <ol>
-        <li>Read the given comprehension carefully.</li>
+        <li>{t("proc1")}</li>
         {/* ************************************************** */}
         <div className="" style={{ display: "flex", alignItems: "start" }}>
           <div
@@ -38,9 +45,7 @@ const ProcedureMidContent = () => {
           </div>
         </div>
         {/* ************************************************** */}
-        <li>
-          Arrange the given jumbled sentences in order as per the passage.
-        </li>
+        <li>{t("proc2")}</li>
         {/* ************************************************** */}
 
         <div className="" style={{ display: "flex", alignItems: "start" }}>
@@ -65,10 +70,7 @@ const ProcedureMidContent = () => {
           </div>
         </div>
         {/* ***************************************************** */}
-        <li>
-          To check the your answer, click on ‘Submit’ button. The green sentence
-          are the correct position and the red are the wrong position.
-        </li>
+        <li>{t("proc3")}</li>
         {/* ************************************************************** */}
         <div className="" style={{ display: "flex", alignItems: "start" }}>
           <div
@@ -92,10 +94,7 @@ const ProcedureMidContent = () => {
           </div>
         </div>
         {/* **************************************************************** */}
-        <li>
-          For each sentence, check if the sentence is True. Click on submit to
-          check your answer, which is displayed at the right of the question.
-        </li>
+        <li>{t("proc4")}</li>
         {/* ***************************************************************** */}
 
         <div className="" style={{ display: "flex", alignItems: "start" }}>
@@ -122,10 +121,7 @@ const ProcedureMidContent = () => {
           </div>
         </div>
         {/* ********************************************************************* */}
-        <li>
-          Complete the sentences choosing an appropriate option. To check your
-          answer click on ‘Submit’.
-        </li>
+        <li>{t("proc5")}</li>
         {/* ************************************************************************* */}
 
         <div className="" style={{ display: "flex", alignItems: "start" }}>
@@ -150,17 +146,11 @@ const ProcedureMidContent = () => {
           </div>
         </div>
         {/* ********************************************************************* */}
-        <li>Complete the crossword with the help of given clues.</li>
+        <li>{t("proc6")}</li>
         <ul type="disc">
-          <li>
-            To reveal the answer of particular row/column click on it and click
-            on respective row/column Reveal’ button e.g. ‘Reveal 3D’.
-          </li>
-          <li>
-            To check your particular answer click on the respective row/column
-            ‘Check’ button e.g. ‘Check 3D’.
-          </li>
-          <li>To check all your answer click on ‘Check All’ button.</li>
+          <li>{t("proc7")}</li>
+          <li>{t("proc8")}</li>
+          <li>{t("proc9")}</li>
         </ul>
         {/* ********************************************************** */}
         <div className="" style={{ display: "flex", alignItems: "start" }}>

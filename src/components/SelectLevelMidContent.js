@@ -1,17 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Card } from "react-bootstrap";
 import { Button } from "@mui/material";
-import logconfig from "../config/dbconfig";
-import { SendLogData } from "../config/wslog.js";
+import { useTranslation } from "react-i18next";
 
 export const SelectLevelMidContent = () => {
-  const [pageName, setpageName] = useState("Select Level");
+  const { t } = useTranslation();
   const navigate = useNavigate();
   return (
     <div>
       <div
-        className="row scrollbar-primary"
+        className="row"
         style={{
           height: "100%",
           width: "93vw",
@@ -22,14 +21,14 @@ export const SelectLevelMidContent = () => {
         <div className="col animate__animated animate__bounceInLeft d-flex justify-content-center align-items-center mb-3 mt-3">
           <Card style={{ width: "18rem" }}>
             <Card.Body className="text-center">
-              <Card.Title>Exercise 1</Card.Title>
+              <Card.Title>{t("exercise")} 1</Card.Title>
               <Button
                 variant="contained"
                 onClick={() =>
                   navigate("/launchpage/englishactivity/exercise1")
                 }
               >
-                Lets Go!
+                {t("letsgo")}
               </Button>
             </Card.Body>
           </Card>
@@ -37,14 +36,14 @@ export const SelectLevelMidContent = () => {
         <div className="col animate__animated animate__bounceInUp d-flex justify-content-center align-items-center mb-3">
           <Card style={{ width: "18rem" }}>
             <Card.Body className="text-center">
-              <Card.Title>Exercise 2</Card.Title>
+              <Card.Title>{t("exercise")} 2</Card.Title>
               <Button
                 variant="contained"
                 onClick={() =>
                   navigate("/launchpage/englishactivity/exercise2")
                 }
               >
-                Lets Go!
+                {t("letsgo")}
               </Button>
             </Card.Body>
           </Card>
@@ -52,14 +51,14 @@ export const SelectLevelMidContent = () => {
         <div className="col animate__animated animate__bounceInUp d-flex justify-content-center align-items-center mb-3">
           <Card style={{ width: "18rem" }}>
             <Card.Body className="text-center">
-              <Card.Title>Exercise 3</Card.Title>
+              <Card.Title>{t("exercise")} 3</Card.Title>
               <Button
                 variant="contained"
                 onClick={() =>
                   navigate("/launchpage/englishactivity/exercise3")
                 }
               >
-                Lets Go!
+                {t("letsgo")}
               </Button>
             </Card.Body>
           </Card>
@@ -67,14 +66,14 @@ export const SelectLevelMidContent = () => {
         <div className="col animate__animated animate__bounceInUp d-flex justify-content-center align-items-center mb-3">
           <Card style={{ width: "18rem" }}>
             <Card.Body className="text-center">
-              <Card.Title>Exercise 4</Card.Title>
+              <Card.Title>{t("exercise")} 4</Card.Title>
               <Button
                 variant="contained"
                 onClick={() =>
                   navigate("/launchpage/englishactivity/exercise4")
                 }
               >
-                Lets Go!
+                {t("letsgo")}
               </Button>
             </Card.Body>
           </Card>

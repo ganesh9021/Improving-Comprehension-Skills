@@ -4,8 +4,10 @@ import apj from "../Img/activity_images/apj.jpg";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import { useTranslation } from "react-i18next";
 
 const Exercise1Midcontent = () => {
+  const { t } = useTranslation();
   const [items, setItems] = useState([]);
   const [buttonColors, setButtonColors] = useState([]);
   const [showFB, setShowFB] = useState(false);
@@ -42,11 +44,7 @@ const Exercise1Midcontent = () => {
   }, []);
 
   useEffect(() => {
-    setInstruction(
-      randomNo === 1
-        ? "Read the passage and accordingly arrange the given jumbled sentences. To rearrange, drag and drop sentences."
-        : "For each sentence, check if it is true and uncheck if it is false."
-    );
+    setInstruction(randomNo === 1 ? t("instr2") : t("instr3"));
   }, [randomNo, instruction]);
 
   const handleSubmit = () => {
@@ -77,7 +75,7 @@ const Exercise1Midcontent = () => {
 
   const handleNext = (str) => {
     setShowFB(false);
-    if (str === "FINISH") {
+    if (finish) {
       navigate("/launchpage/englishactivity");
     } else {
       setFinish(true);
@@ -87,11 +85,7 @@ const Exercise1Midcontent = () => {
 
   const toggleRandomNo = () => {
     setRandomNo(randomNo === 1 ? 2 : 1);
-    setInstruction(
-      randomNo === 1
-        ? "Read the passage and accordingly arrange the given jumbled sentences. To rearrange, drag and drop sentences."
-        : "For each sentence, check if it is true and uncheck if it is false."
-    );
+    setInstruction(randomNo === 1 ? t("instr2") : t("instr3"));
   };
 
   const handleCheckboxChange = (e, item) => {
@@ -115,7 +109,7 @@ const Exercise1Midcontent = () => {
   };
 
   const renderQuestion1 = () => (
-    <div className="row">
+    <div className="row" style={{ fontSize: "calc(.6rem + .4vw)" }}>
       <div className="p-4">
         <DragDropContext onDragEnd={handleOnDragEnd}>
           <Droppable droppableId="droppable">
@@ -149,7 +143,7 @@ const Exercise1Midcontent = () => {
   );
 
   const renderQuestion2 = () => (
-    <div className="row">
+    <div className="row" style={{ fontSize: "calc(.6rem + .4vw)" }}>
       <div className="col-12" style={{ paddingLeft: "40%" }}>
         {shuffledData.exercise1.map((item, index) => (
           <div className="form-check" key={index}>
@@ -173,7 +167,7 @@ const Exercise1Midcontent = () => {
   );
 
   const renderFeedback = () => (
-    <div className="row m-3">
+    <div className="row m-3" style={{ fontSize: "calc(.6rem + .4vw)" }}>
       <div
         className="p-3 text-light"
         style={{
@@ -181,7 +175,7 @@ const Exercise1Midcontent = () => {
           borderRadius: "10px",
         }}
       >
-        <div className="fw-bolder">Feedback!</div>
+        <div className="fw-bolder">{t("feedback")}!</div>
         <div>
           {feedback
             ? "All answers are correct."
@@ -201,6 +195,7 @@ const Exercise1Midcontent = () => {
             width: "100%",
             padding: 0,
             borderRadius: "5px",
+            fontSize: "calc(.6rem + .4vw)",
           }}
         >
           <div
@@ -233,14 +228,27 @@ const Exercise1Midcontent = () => {
             {showFB && renderFeedback()}
 
             <div className="d-flex justify-content-around">
-              <Button variant="contained" onClick={handleSubmit}>
-                Submit
+              <Button
+                variant="contained"
+                onClick={handleSubmit}
+                sx={{
+                  background: "#0F477E",
+                  color: "#ffffff",
+                  fontSize: "calc(.6rem + .4vw)",
+                }}
+              >
+                {t("submit")}
               </Button>
               <Button
                 variant="contained"
                 onClick={(e) => handleNext(e.target.innerText)}
+                sx={{
+                  background: "#0F477E",
+                  color: "#ffffff",
+                  fontSize: "calc(.6rem + .4vw)",
+                }}
               >
-                {finish ? "Finish" : "Next"}
+                {finish ? t("finish") : t("next")}
               </Button>
             </div>
           </div>

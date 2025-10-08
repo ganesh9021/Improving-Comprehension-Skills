@@ -1,7 +1,7 @@
 module.exports = {
   logurl: "ws://10.212.9.179:8000",
-  activityName: "Improving Comprehension Skills",
+  activityName: "Improving comprehension skills",
   subject: "English",
-  activityUniqueName: "Improving Comprehension Skills",
+  activityUniqueName: "Improving comprehension skills",
   standard: "8",
 };

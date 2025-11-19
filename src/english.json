@@ -1,15 +1,23 @@
 {
-  "act1": "In this activity, we are going to learn about the subject verb agreement.",
+  "title": "Improving comprehension skills",
+  "objective": "To understand, interpret, and analyze written texts in the given paragraph.",
+  "learningOutcome": "Students will be able to read a given passage and accurately identify its main ideas and supporting details.",
+
+  "act1": "In this activity, learn to read a passage and interpret it.",
+  "act2":"Exercises are given in the activity.",
+  "act3":"Select any one exercise.",
+  "act4":"Each exercise has a passage or a poem.",
+  "act5":"Answer the question given based on the passage or poem in the exercise.",
 
   "instr1": "Read the passage carefully.",
-  "instr2":"Read the passage and accordingly arrange the given jumbled sentences. To rearrange, drag and drop sentences.",
-  "instr3":"For each sentence, check if it is true and uncheck if it is false.",
-  "instr4":"Complete the given sentences by choosing an appropriate option.",
-  "instr5":"Please select atleast one option for each question.",
-  "instr6":"Both the answers are correct!",
-  "instr7":"Only first answer is correct!",
-  "instr8":"only second answer is correct!",
-  "instr9":"Both the answers are incorrect!",
+  "instr2": "Read the passage and accordingly arrange the given jumbled sentences. To rearrange, drag and drop sentences.",
+  "instr3": "For each sentence, check if it is true and uncheck if it is false.",
+  "instr4": "Complete the given sentences by choosing an appropriate option.",
+  "instr5": "Please select atleast one option for each question.",
+  "instr6": "Both the answers are correct!",
+  "instr7": "Only first answer is correct!",
+  "instr8": "Only second answer is correct!",
+  "instr9": "Both the answers are incorrect!",
 
   "q_instr1": "Read all instructions given below.",
   "q_instr2": "The quiz will start after clicking on the \"OK\" button, along with a timer.",
@@ -28,7 +36,7 @@
   "proc6": "Complete the crossword with the help of given clues.",
   "proc7": "To reveal the answer of particular row/column click on it and click on respective row/column Reveal’ button e.g. ‘Reveal 3D’.",
   "proc8": "To check your particular answer click on the respective row/column ‘Check’ button e.g. ‘Check 3D’.",
-  "proc9":"To check all your answer click on ‘Check All’ button.",
+  "proc9": "To check all your answer click on ‘Check All’ button.",
 
   "obj": "Objective",
   "lo": "Learning outcome",
@@ -60,5 +68,11 @@
   "restart": "RESTART",
   "exercise": "EXERCISE",
   "feedback": "FEEDBACK",
-  "submit": "SUBMIT"
+  "submit": "SUBMIT",
+
+  "Developed_by": "Developed by",
+  "C_DAC_Mumbai": "C-DAC Mumbai",
+  "Funded_by": "Funded by",
+  "Ministry": "Ministry of Electronics and Information Technology || Ministry of Education",
+  "Government_of_India": "Government of India"
 }

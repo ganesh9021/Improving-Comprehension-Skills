@@ -13,7 +13,7 @@ const MathsQuiz = () => {
   return (
     <div>
       <Quiz
-        H_title="Improving comprehension skills"
+        H_title={t("title")}
         H_sidebarvisible="hidden"
         HQ_quittext={t("aysywtq")}
         HQ_yes={t("yes")}
@@ -22,7 +22,7 @@ const MathsQuiz = () => {
         WS_sendJsonMessage={sendJsonMessage}
         WS_SendLogData={SendLogData}
         labNo="-"
-        labShortName="Improving comprehension skills"
+        labShortName={t("title")}
       />
     </div>
   );

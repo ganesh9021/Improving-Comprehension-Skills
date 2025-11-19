@@ -62,7 +62,7 @@ const Exercise3Midcontent = () => {
       setDisable1(true);
       setBGColor("warning");
     } else if (answer2Check) {
-      alert(t("instr8"));
+      setFeedback(t("instr8"));
       setDisable2(true);
       setBGColor("warning");
     } else {
@@ -101,7 +101,7 @@ const Exercise3Midcontent = () => {
           <tbody>
             {shuffledData.exercise1.map((item, index) => (
               <tr>
-                <td>
+                <td className="text-center">
                   <Form.Check
                     type="radio"
                     value={item}
@@ -127,7 +127,7 @@ const Exercise3Midcontent = () => {
           <tbody>
             {shuffledData.exercise2.map((item, index) => (
               <tr>
-                <td>
+                <td className="text-center">
                   <Form.Check
                     type="radio"
                     value={item}
@@ -146,9 +146,30 @@ const Exercise3Midcontent = () => {
   );
 
   const renderFeedback = () => (
-    <div className="row p-2" style={{ fontSize: "calc(.6rem + .4vw)" }}>
-      <div className={`text-center p-2 bg-${bgColor} text-light rounded`}>
-        <div className="fw-bolder">{t("feedback")}!</div>
+    <div
+      className="row p-2 row justify-content-center"
+      style={{ fontSize: "calc(.6rem + .4vw)" }}
+    >
+      <div
+        className="p-3 d-flex justify-content-center align-items-center"
+        style={{
+          width: "auto",
+          height: "auto",
+          background: "#ffffff",
+          boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.5)",
+          borderRadius: "50px",
+          padding: "1rem",
+        }}
+      >
+        <div className="fw-bolder">
+          {bgColor === "success" ? (
+            <span className="text-success">Correct!&nbsp;</span>
+          ) : bgColor === "danger" ? (
+            <span className="text-danger">Incorrect!&nbsp;</span>
+          ) : (
+            <span className="text-warning">Partially correct!&nbsp;</span>
+          )}
+        </div>
         <div>{feedback}</div>
       </div>
     </div>

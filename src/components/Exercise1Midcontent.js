@@ -62,6 +62,18 @@ const Exercise1Midcontent = () => {
       item === data[0].exercise2[index] ? "success" : "danger"
     );
     setButtonColors(updatedButtonColors);
+
+    const allCorrect = items.every(
+      (item, index) => item === data[0].exercise2[index]
+    );
+
+    if (allCorrect) {
+      setShowFB(true);
+      setFeedback(true); // All items in correct order
+    } else {
+      setShowFB(true);
+      setFeedback(false); // Some items are misplaced
+    }
   };
 
   const checkAnswers = () => {
@@ -167,15 +179,28 @@ const Exercise1Midcontent = () => {
   );
 
   const renderFeedback = () => (
-    <div className="row m-3" style={{ fontSize: "calc(.6rem + .4vw)" }}>
+    <div
+      className="row m-3 text-center justify-content-center"
+      style={{ fontSize: "calc(.6rem + .4vw)" }}
+    >
       <div
-        className="p-3 text-light"
+        className="p-3 d-flex justify-content-center align-items-center"
         style={{
-          background: feedback ? "green" : "red",
-          borderRadius: "10px",
+          width: "auto",
+          height: "auto",
+          background: "#ffffff",
+          boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.5)",
+          borderRadius: "50px",
+          padding: "1rem",
         }}
       >
-        <div className="fw-bolder">{t("feedback")}!</div>
+        <div className="fw-bolder">
+          {feedback ? (
+            <span className="text-success">Correct!&nbsp;</span>
+          ) : (
+            <span className="text-danger">Incorrect!&nbsp;</span>
+          )}
+        </div>
         <div>
           {feedback
             ? "All answers are correct."

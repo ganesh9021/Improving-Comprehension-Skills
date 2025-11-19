@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import video from "../HelpVideo/ImproveComprehensionSkills.mp4";
+import video from "../HelpVideo/improving-comprehension-skills.mp4";
 
 const AnimationMidContent = () => {
   return (

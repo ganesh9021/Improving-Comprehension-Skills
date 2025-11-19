@@ -1,5 +1,13 @@
 {
-  "act1": "इस गतिविधि में, हम क्रिया और कर्ता के बीच के मेल के बारे में सीखेंगे।",
+  "title": "Improving comprehension skills",
+  "objective": "To enhance learners' ability to understand, interpret, and analyze written texts through the use of effective reading strategies.",
+  "learningOutcome1": "Student will be able to read a given passage and accurately identify its main ideas, supporting details, and implied meanings using appropriate comprehension strategies.",
+
+  "act1": "इस गतिविधि में, एक अनुच्छेद पढ़ना और उसका अर्थ समझना सीखें।",
+  "act2": "इस गतिविधि में अभ्यास प्रश्न दिए गए हैं।",
+  "act3": "किसी एक अभ्यास का चयन करें।",
+  "act4": "प्रत्येक अभ्यास में एक अनुच्छेद या कविता दी गई है।",
+  "act5": "अभ्यास में दिए गए अनुच्छेद या कविता के आधार पर प्रश्न का उत्तर दें।",
 
   "instr1": "गद्यांश को ध्यानपूर्वक पढ़ें।",
   "instr2": "गद्यांश पढ़ें और उसके अनुसार दिए गए अव्यवस्थित वाक्यों को क्रम में लगाएं। पुनः क्रमबद्ध करने के लिए वाक्यों को खींचें और छोड़ें।",
@@ -60,5 +68,11 @@
   "restart": "फिर से शुरू करें",
   "exercise": "अभ्यास",
   "feedback": "प्रतिक्रिया",
-  "submit": "जमा करें"
+  "submit": "जमा करें",
+
+  "Developed_by": "निर्माता",
+  "C_DAC_Mumbai": "सी-डैक मुम्बई",
+  "Funded_by": "वित्त प्रदाता",
+  "Ministry": "इलेक्ट्रॉनिक्स एवं सूचना प्रौद्योगिकी मंत्रालय || शिक्षा मंत्रालय",
+  "Government_of_India": "भारत सरकार"
 }

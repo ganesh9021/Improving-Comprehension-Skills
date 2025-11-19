@@ -24,6 +24,11 @@ export const SelectLevelMidContent = () => {
               <Card.Title>{t("exercise")} 1</Card.Title>
               <Button
                 variant="contained"
+                sx={{
+                  background: "#0F477E",
+                  color: "#ffffff",
+                  fontSize: "calc(.6rem + .4vw)",
+                }}
                 onClick={() =>
                   navigate("/launchpage/englishactivity/exercise1")
                 }
@@ -39,6 +44,11 @@ export const SelectLevelMidContent = () => {
               <Card.Title>{t("exercise")} 2</Card.Title>
               <Button
                 variant="contained"
+                sx={{
+                  background: "#0F477E",
+                  color: "#ffffff",
+                  fontSize: "calc(.6rem + .4vw)",
+                }}
                 onClick={() =>
                   navigate("/launchpage/englishactivity/exercise2")
                 }
@@ -54,6 +64,11 @@ export const SelectLevelMidContent = () => {
               <Card.Title>{t("exercise")} 3</Card.Title>
               <Button
                 variant="contained"
+                sx={{
+                  background: "#0F477E",
+                  color: "#ffffff",
+                  fontSize: "calc(.6rem + .4vw)",
+                }}
                 onClick={() =>
                   navigate("/launchpage/englishactivity/exercise3")
                 }
@@ -69,6 +84,11 @@ export const SelectLevelMidContent = () => {
               <Card.Title>{t("exercise")} 4</Card.Title>
               <Button
                 variant="contained"
+                sx={{
+                  background: "#0F477E",
+                  color: "#ffffff",
+                  fontSize: "calc(.6rem + .4vw)",
+                }}
                 onClick={() =>
                   navigate("/launchpage/englishactivity/exercise4")
                 }

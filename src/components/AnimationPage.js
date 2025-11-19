@@ -13,7 +13,7 @@ const AnimationPage = () => {
   return (
     <>
       <TheoryPageWithLabel
-        H_title="Improving comprehension skills"
+        H_title={t("title")}
         HQ_yes={t("yes")}
         HQ_cancel={t("cancel")}
         HQ_quittext={t("aysywtq")}
@@ -31,7 +31,7 @@ const AnimationPage = () => {
         WS_sendJsonMessage={sendJsonMessage}
         WS_SendLogData={SendLogData}
         labNo="-"
-        labShortName="Improving comprehension skills"
+        labShortName={t("title")}
       />
     </>
   );

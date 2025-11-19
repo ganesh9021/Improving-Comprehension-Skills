@@ -49,23 +49,24 @@ const Exercise2Midcontent = () => {
     const answer2Check = data[1].answer2.includes(selectedAns2);
 
     if (!selectedAns1 || !selectedAns2) {
-      setFeedback(t("instr5"));
+      setFeedback(t("instr5")); //Please select atleast one option for each question.
       setBGColor("danger");
     } else if (answer1Check && answer2Check) {
-      setFeedback(t("instr6"));
+      setFeedback(t("instr6")); //Both the answers are correct!
       setDisable1(true);
       setDisable2(true);
       setBGColor("success");
     } else if (answer1Check) {
-      setFeedback(t("instr7"));
+      setFeedback(t("instr7")); //Only first answer is correct!
       setDisable1(true);
       setBGColor("warning");
     } else if (answer2Check) {
-      alert(t("instr8"));
+      //only second answer is correct!
+      setFeedback(t("instr8"));
       setDisable2(true);
       setBGColor("warning");
     } else {
-      setFeedback(t("instr9"));
+      setFeedback(t("instr9")); //Both the answers are incorrect!
       setBGColor("danger");
     }
   };
@@ -100,7 +101,7 @@ const Exercise2Midcontent = () => {
           <tbody>
             {shuffledData.exercise1.map((item, index) => (
               <tr>
-                <td>
+                <td className="text-center">
                   <Form.Check
                     type="radio"
                     value={item}
@@ -126,7 +127,7 @@ const Exercise2Midcontent = () => {
           <tbody>
             {shuffledData.exercise2.map((item, index) => (
               <tr>
-                <td>
+                <td className="text-center">
                   <Form.Check
                     type="radio"
                     value={item}
@@ -145,9 +146,30 @@ const Exercise2Midcontent = () => {
   );
 
   const renderFeedback = () => (
-    <div className="row p-2" style={{ fontSize: "calc(.6rem + .4vw)" }}>
-      <div className={`text-center p-2 bg-${bgColor} text-light rounded`}>
-        <div className="fw-bolder">{t("feedback")}!</div>
+    <div
+      className="row p-2 justify-content-center"
+      style={{ fontSize: "calc(.6rem + .4vw)" }}
+    >
+      <div
+        className="p-3 d-flex justify-content-center align-items-center"
+        style={{
+          width: "auto",
+          height: "auto",
+          background: "#ffffff",
+          boxShadow: "0px 0px 5px rgba(0, 0, 0, 0.5)",
+          borderRadius: "50px",
+          padding: "1rem",
+        }}
+      >
+        <div className="fw-bolder">
+          {bgColor === "success" ? (
+            <span className="text-success">Correct!&nbsp;</span>
+          ) : bgColor === "danger" ? (
+            <span className="text-danger">Incorrect!&nbsp;</span>
+          ) : (
+            <span className="text-warning">Partially correct!&nbsp;</span>
+          )}
+        </div>
         <div>{feedback}</div>
       </div>
     </div>
@@ -167,7 +189,7 @@ const Exercise2Midcontent = () => {
           }}
         >
           <div
-            className="sticky-top"
+            className="sticky-top text-center"
             style={{
               background: "#3bafda",
               padding: "10px",

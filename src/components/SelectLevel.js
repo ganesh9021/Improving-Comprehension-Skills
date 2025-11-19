@@ -14,7 +14,7 @@ const SelectLevel = () => {
   return (
     <>
       <OlabsPage
-        H_title="Improving comprehension skills"
+        H_title={t("title")}
         HQ_yes={t("yes")}
         HQ_cancel={t("cancel")}
         HQ_quittext={t("aysywtq")}
@@ -30,7 +30,7 @@ const SelectLevel = () => {
         WS_sendJsonMessage={sendJsonMessage}
         WS_SendLogData={SendLogData}
         labNo="-"
-        labShortName="Improving comprehension skills"
+        labShortName={t("title")}
       />
     </>
   );

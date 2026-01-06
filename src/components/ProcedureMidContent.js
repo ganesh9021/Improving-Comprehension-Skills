@@ -146,14 +146,14 @@ const ProcedureMidContent = () => {
           </div>
         </div>
         {/* ********************************************************************* */}
-        <li>{t("proc6")}</li>
+        {/* <li>{t("proc6")}</li>
         <ul type="disc">
           <li>{t("proc7")}</li>
           <li>{t("proc8")}</li>
           <li>{t("proc9")}</li>
-        </ul>
+        </ul> */}
         {/* ********************************************************** */}
-        <div className="" style={{ display: "flex", alignItems: "start" }}>
+        {/* <div className="" style={{ display: "flex", alignItems: "start" }}>
           <div
             style={{
               display: "flex",
@@ -173,7 +173,7 @@ const ProcedureMidContent = () => {
             />
             <div className="fw-bold">Fig. 6: Crossword</div>
           </div>
-        </div>
+        </div> */}
         {/* **************************************************************** */}
       </ol>
     </div>

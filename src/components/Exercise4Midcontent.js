@@ -33,8 +33,8 @@ const Exercise4Midcontent = () => {
 
   useEffect(() => {
     // Shuffle the arrays before setting them into state
-    const shuffledExercise2 = shuffleArray([...data[1].exercise2]);
-    const shuffledExercise1 = shuffleArray([...data[1].exercise1]);
+    const shuffledExercise2 = shuffleArray([...data[3].exercise2]);
+    const shuffledExercise1 = shuffleArray([...data[3].exercise1]);
     setShuffledData({
       exercise1: shuffledExercise1,
       exercise2: shuffledExercise2,
@@ -44,10 +44,8 @@ const Exercise4Midcontent = () => {
 
   const handleSubmit = () => {
     setShowFB(true);
-    // console.log(selectedAns1);
-    // console.log(selectedAns2);
-    const answer1Check = data[1].answer1.includes(selectedAns1);
-    const answer2Check = data[1].answer2.includes(selectedAns2);
+    const answer1Check = data[3].answer1.includes(selectedAns1);
+    const answer2Check = data[3].answer2.includes(selectedAns2);
 
     if (!selectedAns1 || !selectedAns2) {
       setFeedback(t("instr5"));
@@ -76,7 +74,7 @@ const Exercise4Midcontent = () => {
   };
 
   const handleRadioChange = (event, exercise) => {
-    console.log(exercise);
+    // console.log(exercise);
 
     switch (exercise) {
       case "exercise1":
@@ -95,7 +93,7 @@ const Exercise4Midcontent = () => {
     <div className="row" style={{ fontSize: "calc(.6rem + .4vw)" }}>
       <div className="">
         <div className="fw-bolder">
-          One elderly gentleman was especially heart-broken because
+          Fowler felt disappointed when he met Ausable because
         </div>
         <Table bordered>
           <tbody>
@@ -122,7 +120,9 @@ const Exercise4Midcontent = () => {
   const renderQuestion2 = () => (
     <div className="row" style={{ fontSize: "calc(.6rem + .4vw)" }}>
       <div className="">
-        <div className="fw-bolder">Lionel could not be saved as</div>
+        <div className="fw-bolder">
+          Max tried to escape through the window because
+        </div>
         <Table bordered>
           <tbody>
             {shuffledData.exercise2.map((item, index) => (

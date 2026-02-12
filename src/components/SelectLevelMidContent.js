@@ -33,7 +33,7 @@ export const SelectLevelMidContent = () => {
                   navigate("/launchpage/englishactivity/exercise1")
                 }
               >
-                {t("letsgo")}
+                {t("lets_go")}
               </Button>
             </Card.Body>
           </Card>
@@ -53,7 +53,7 @@ export const SelectLevelMidContent = () => {
                   navigate("/launchpage/englishactivity/exercise2")
                 }
               >
-                {t("letsgo")}
+                {t("lets_go")}
               </Button>
             </Card.Body>
           </Card>
@@ -73,7 +73,7 @@ export const SelectLevelMidContent = () => {
                   navigate("/launchpage/englishactivity/exercise3")
                 }
               >
-                {t("letsgo")}
+                {t("lets_go")}
               </Button>
             </Card.Body>
           </Card>
@@ -93,7 +93,7 @@ export const SelectLevelMidContent = () => {
                   navigate("/launchpage/englishactivity/exercise4")
                 }
               >
-                {t("letsgo")}
+                {t("lets_go")}
               </Button>
             </Card.Body>
           </Card>

@@ -23,12 +23,13 @@ const Exercise2 = () => {
         RSM_theory_tt={t("theory")}
         RSM_vivavoce_tt={t("vivavoce")}
         RSM_ok={t("ok")}
+        RSM_Menu_tt={t("menu")}	
         M_midcontent_comp={<Exercise2Midcontent />}
         RSM_Intruc_popup_title_string={t("ifq")}
         RSM_QuizPopupContent_comp={<QuizPopupContent />}
         WS_sendJsonMessage={sendJsonMessage}
         WS_SendLogData={SendLogData}
-        labNo="-"
+        labNo="8"
         labShortName={t("title")}
       />
     </>

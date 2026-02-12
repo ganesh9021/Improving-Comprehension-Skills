@@ -1,8 +1,6 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
 
 const TheoryMidContent = () => {
-  const { t } = useTranslation();
   return (
     <div
       className="py-3"
@@ -13,8 +11,11 @@ const TheoryMidContent = () => {
         fontSize: "calc(.6rem + .4vw)",
       }}
     >
-      <div className="fw-bolder">{t("obj")}</div>
-      <ul>{t("objective")}</ul>
+      <div className="fw-bolder">Objective</div>
+      <ul>
+        To understand, interpret, and analyze written texts in the given
+        paragraph.
+      </ul>
       <div className="fw-bolder">Reading Comprehension [Definition]:</div>
       <div>
         <ul>

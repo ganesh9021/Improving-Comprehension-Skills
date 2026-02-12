@@ -163,11 +163,11 @@ const Exercise3Midcontent = () => {
       >
         <div className="fw-bolder">
           {bgColor === "success" ? (
-            <span className="text-success">Correct!&nbsp;</span>
+            <span className="text-success">{t("correct")}&nbsp;</span>
           ) : bgColor === "danger" ? (
-            <span className="text-danger">Incorrect!&nbsp;</span>
+            <span className="text-danger">{t("correct")}&nbsp;</span>
           ) : (
-            <span className="text-warning">Partially correct!&nbsp;</span>
+            <span className="text-warning">{t("partiallyCorrect")}&nbsp;</span>
           )}
         </div>
         <div>{feedback}</div>

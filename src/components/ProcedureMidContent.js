@@ -41,7 +41,7 @@ const ProcedureMidContent = () => {
               src={img1}
               alt="img"
             />
-            <div className="fw-bold">Fig. 1: APJ Abdul Kalam</div>
+            <div className="fw-bold">{t("proc_image_1")}</div>
           </div>
         </div>
         {/* ************************************************** */}
@@ -66,7 +66,7 @@ const ProcedureMidContent = () => {
               src={img2}
               alt="img"
             />
-            <div className="fw-bold">Fig. 2: Drag and drop</div>
+            <div className="fw-bold">{t("proc_image_2")}</div>
           </div>
         </div>
         {/* ***************************************************** */}
@@ -90,7 +90,7 @@ const ProcedureMidContent = () => {
               src={img3}
               alt="img"
             />
-            <div className="fw-bold">Fig. 3: Correct feedback</div>
+            <div className="fw-bold">{t("proc_image_3")}</div>
           </div>
         </div>
         {/* **************************************************************** */}
@@ -116,7 +116,7 @@ const ProcedureMidContent = () => {
               alt="img"
             />
             <div className="fw-bold">
-              Fig. 4: Correct and incorrect feedback
+            {t("proc_image_4")}
             </div>
           </div>
         </div>
@@ -142,7 +142,7 @@ const ProcedureMidContent = () => {
               src={img5}
               alt="img"
             />
-            <div className="fw-bold">Fig. 5: Incorrect feedback</div>
+            <div className="fw-bold">{t("proc_image_5")}</div>
           </div>
         </div>
         {/* ********************************************************************* */}

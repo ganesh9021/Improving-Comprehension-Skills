@@ -196,9 +196,9 @@ const Exercise1Midcontent = () => {
       >
         <div className="fw-bolder">
           {feedback ? (
-            <span className="text-success">Correct!&nbsp;</span>
+            <span className="text-success">{t("correct")}&nbsp;</span>
           ) : (
-            <span className="text-danger">Incorrect!&nbsp;</span>
+            <span className="text-danger">{t("incorrect")}&nbsp;</span>
           )}
         </div>
         <div>
